@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .my-align {
+    @apply mx-auto  px-4 sm:px-8 my-10;
+  }
+}
+
+.crypto-card {
+  background: linear-gradient(145deg, #1e2a47, #2c3e60);
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  color: #ffffff;
+  max-width: 250px;
+  transition: transform 0.2s ease-in-out;
+}
+.crypto-card:hover {
+  transform: translateY(-5px);
+}
+
+.crypto-price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.crypto-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.daily-change.positive {
+  color: #4caf50;
+}
+
+.daily-change.negative {
+  color: #e74c3c;
+}
+
+.icon-background {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 4px;
+}
